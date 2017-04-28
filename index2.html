@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>플립북 포트폴리오</title>
+	<style>
+	body{background-image: url('img/S.png');overflow: hidden;}
+	.book-wrap{width: 920px;margin:60px auto;}
+	</style>
+</head>
+<body>
+	<div class="book-wrap">
+		<div id="flipbook">
+			<div class="page"><img src="img/1.jpg" alt=""></div>
+			<div class="page"><img src="img/2.jpg" alt=""></div>
+			<div class="page"><img src="img/3.jpg" alt=""></div>
+			<div class="page"><img src="img/4.jpg" alt=""></div>
+			<div class="page"><img src="img/5.jpg" alt=""></div>
+			<div class="page"><img src="img/6.jpg" alt=""></div>
+			
+		</div>
+	</div>
+	<script src="lib/jquery.js"></script>
+	<script src="lib/turn.js"></script>
+	<script>
+	$(function(){
+		$('#flipbook').turn({
+			width:920,height:600
+		})
+	});
+	</script>
+</body>
+</html>
